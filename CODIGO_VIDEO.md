@@ -24,9 +24,20 @@ ros2 launch turtlebot4_ignition_bringup turtlebot4_ignition.launch.py --humble
 
 # -------------- En otra terminal -------------
 source /opt/ros/humble/setup.bash
-# 
-# 
-# 
+
+# Se revisa el topic list que este /cmd_vel 
+ros2 topic list
+
+# Se visualizan los dos mapas en movimiento se usa el comando de moverlo desde la temrinal 
+
+# -------------- En otra terminal -------------
+source /opt/ros/humble/setup.bash
+# Guardar el Mapa
+cd turtlebot4_ws
+cd src
+
+ros2 service call /slam_toolbox/save_map slam_toolbox/srv/SaveMap "name:
+  data: 'map_name'"                                              EN ESTA LINEA HAY QUE PONERLE EL NOMBRE QUE YO QUIERA
 # 
 # 
 # 
