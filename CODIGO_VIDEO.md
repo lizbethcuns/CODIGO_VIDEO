@@ -33,6 +33,8 @@ ros2 topic list
 
 # Se visualizan los dos mapas en movimiento se usa el comando de moverlo desde la temrinal 
 
+ros2 topic pub /cmd_vel geometry_msgs/Twist '{linear: {x: 0.7 , y: 0.0, z: 0.0}, angular: {x: 0.0, y: 0.0, z: 0.0}}'
+
 # -------------- En otra terminal -------------
 source /opt/ros/humble/setup.bash
 # Guardar el Mapa
