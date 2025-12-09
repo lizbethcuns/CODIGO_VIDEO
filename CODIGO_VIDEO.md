@@ -1,5 +1,8 @@
 # CODIGO_VIDEO
 # ----------------------------> Generando un mapa usando el paquete slam_toolbox <-------------------------------------
+source ~/turtlebot4_ws/install/setup.bash
+
+
 
 #Primero, instala turtlebot4_navigation:
 sudo apt install ros-humble-turtlebot4-navigation
